@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="nba.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="nav">
+            <h3 class="h3">NBA FANTASY 2014-2024</h3>
+        </nav>
+    </header>
+    <h2>My Fantasy Team</h2>
+    <div class="container">
+        <div class="div-self">Point Guard
+            <ul></ul>
+        </div>
+        <div class="div-self">Shooting Guard
+            <ul></ul>
+        </div>
+        <div class="div-self">Small Forward
+            <ul></ul>
+        </div>
+        <div class="div-self">Power Forward
+            <ul></ul>
+        </div>
+        <div class="div-self">Center
+            <ul></ul>
+        </div>
+    </div>
+    <h2>NBA Player Search</h2>
+    <div id="bla">
+        <div class="selection">
+            <select id="select">
+                <option>PG</option>
+                <option>SG</option>
+                <option>SF</option>
+                <option>PF</option>
+                <option>C</option>
+            </select>
+            <form class="input-range">
+                <input id="point" type="range" min="0" max="20000" />
+                <br>
+                <input id="two" type="range" min="0" max="100" />
+                <br>
+                <input id="three" type="range" min="0" max="100" />
+            </form>
+            <button id="search-btn">Search Player</button>
+            <table id="table" border="1">
+                <thead id="thead">
+                    <tr class="tr_id">
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Points</th>
+                        <th>FG%</th>
+                        <th>3P%</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
     <script src="nba.js"></script>
 </body>
+
 </html>
